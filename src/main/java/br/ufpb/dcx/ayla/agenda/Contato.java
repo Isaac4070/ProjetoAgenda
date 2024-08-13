@@ -1,14 +1,15 @@
 package br.ufpb.dcx.ayla.agenda;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Contato {
+public class Contato implements Serializable {
     private String nome;
     private int diaAniversario;
     private int mesAniversario;
 
 
-    public Contato(String nome, int diaAniversario, int mesAniversario) {
+    public Contato(String nome, int diaAniversario, String mesAniversario) {
         this.nome = nome;
         this.diaAniversario = diaAniversario;
         this.mesAniversario = mesAniversario;
