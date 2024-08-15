@@ -9,10 +9,10 @@ public class Contato implements Serializable {
     private int mesAniversario;
 
 
-    public Contato(String nome, int diaAniversario, String mesAniversario) {
+    public Contato(String nome, int dia, int mes) {
         this.nome = nome;
-        this.diaAniversario = diaAniversario;
-        this.mesAniversario = mesAniversario;
+        this.diaAniversario = dia;
+        this.mesAniversario = mes;
     }
 
 
