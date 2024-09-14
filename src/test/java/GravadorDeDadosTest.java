@@ -19,7 +19,7 @@ public class GravadorDeDadosTest {
         GravadorDeDados gravadorDeDados = new GravadorDeDados();
         File arquivo = new File(GravadorDeDados.ARQUIVO_CONTATOS);
         assertFalse(arquivo.exists());
-        HashMap <String, Contato> contatosMap = HashMap<>();
+        HashMap <String, Contato> contatosMap = new HashMap<>();
         contatosMap.put("Isaac", new Contato("Isaac", 29, 9));
         gravadorDeDados.salvarContatos(contatosMap);
         assertTrue(arquivo.exists());
@@ -37,7 +37,7 @@ public class GravadorDeDadosTest {
         GravadorDeDados gravadorDeDados = new GravadorDeDados();
         File arquivo = new File(GravadorDeDados.ARQUIVO_CONTATOS);
         assertFalse(arquivo.exists());
-        HashMap <String, Contato> contatosMap = HashMap<>();
+        HashMap <String, Contato> contatosMap = new HashMap<>();
         contatosMap.put("Isaac", new Contato("Isaac", 29, 9));
         gravadorDeDados.salvarContatos(contatosMap);
         assertTrue(arquivo.exists());
